@@ -28,6 +28,9 @@ class Element {
   get() {
     return this.element;
   }
+  getId(prop){
+    this.element.id = prop
+  }
 
   append(element) {
     this.element.append(element);

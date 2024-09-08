@@ -1,15 +1,10 @@
 import Element from "../constructor/Element.js";
 
-const cardData = [
-  'Card 1',
-  'Card 2',
-  'Card 3',
-  'Card 4',
-  'Card 5',
-];
 
-const cards = cardData.map(el => new Element('div', 'card', el).get())
-
-const content = new Element('div', 'content', cards);
+const itemLeft = new Element('div','conteiner__item','');
+const itemRicht = new Element('div','conteiner__item','')
+itemLeft.getId('itemLeft');
+itemRicht.getId('itemRicht')
+const content = new Element('div', 'content', [itemLeft.get(),itemRicht.get()]);
 
 export default content;
